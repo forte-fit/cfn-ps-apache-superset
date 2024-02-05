@@ -191,6 +191,8 @@ Resources:
         # namespace name created in AWS Cloud Map
         - !Sub ${ClusterName}.local
         Essential: false
+        Interactive: true 
+        EnableExecuteCommand: true
         Image: docker/ecs-searchdomain-sidecar:1.0
         LogConfiguration:
           LogDriver: awslogs
@@ -562,6 +564,8 @@ Resources:
         - !Sub ${AWS::Region}.compute.internal
         - !Sub ${ClusterName}.local
         Essential: false
+        Interactive: true 
+        EnableExecuteCommand: true
         Image: docker/ecs-searchdomain-sidecar:1.0
         LogConfiguration:
           LogDriver: awslogs
@@ -761,6 +765,8 @@ Resources:
         - !Sub ${AWS::Region}.compute.internal
         - !Sub ${ClusterName}.local
         Essential: false
+        Interactive: true E
+        EnableExecuteCommand: true
         Image: docker/ecs-searchdomain-sidecar:1.0
         LogConfiguration:
           LogDriver: awslogs
@@ -1033,6 +1039,8 @@ Resources:
         - !Sub ${AWS::Region}.compute.internal
         - !Sub ${ClusterName}.local
         Essential: false
+        Interactive: true 
+        EnableExecuteCommand: true
         Image: docker/ecs-searchdomain-sidecar:1.0
         LogConfiguration:
           LogDriver: awslogs
@@ -1279,6 +1287,8 @@ Resources:
         - !Sub ${AWS::Region}.compute.internal
         - !Sub ${ClusterName}.local
         Essential: false
+        Interactive: true 
+        EnableExecuteCommand: true
         Image: docker/ecs-searchdomain-sidecar:1.0
         LogConfiguration:
           LogDriver: awslogs
@@ -1500,6 +1510,8 @@ Resources:
         - !Sub ${AWS::Region}.compute.internal
         - !Sub ${ClusterName}.local
         Essential: false
+        Interactive: true 
+        EnableExecuteCommand: true
         Image: docker/ecs-searchdomain-sidecar:1.0
         LogConfiguration:
           LogDriver: awslogs
@@ -1723,6 +1735,8 @@ Resources:
         - !Sub ${AWS::Region}.compute.internal
         - !Sub ${ClusterName}.local
         Essential: false
+        Interactive: true 
+        EnableExecuteCommand: true
         Image: docker/ecs-searchdomain-sidecar:1.0
         LogConfiguration:
           LogDriver: awslogs
