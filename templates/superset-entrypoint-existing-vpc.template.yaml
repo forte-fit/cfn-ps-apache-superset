@@ -152,7 +152,6 @@ Resources:
           Subnets:
           - !Ref PrivateSubnet1
           - !Ref PrivateSubnet2
-      PlatformVersion: 1.4.0
       PropagateTags: SERVICE
       SchedulingStrategy: REPLICA
       ServiceRegistries:
@@ -526,7 +525,7 @@ Resources:
           Subnets:
           - !Ref PrivateSubnet1
           - !Ref PrivateSubnet2
-      PlatformVersion: 1.4.0
+      
       PropagateTags: SERVICE
       SchedulingStrategy: REPLICA
       ServiceRegistries:
@@ -703,7 +702,7 @@ Resources:
           Subnets:
           - !Ref PrivateSubnet1
           - !Ref PrivateSubnet2
-      PlatformVersion: 1.4.0
+      
       PropagateTags: SERVICE
       SchedulingStrategy: REPLICA
       ServiceRegistries:
@@ -999,7 +998,7 @@ Resources:
           Subnets:
           - !Ref PrivateSubnet1
           - !Ref PrivateSubnet2
-      PlatformVersion: 1.4.0
+      
       PropagateTags: SERVICE
       SchedulingStrategy: REPLICA
       ServiceRegistries:
@@ -1246,7 +1245,7 @@ Resources:
           Subnets:
           - !Ref PrivateSubnet1
           - !Ref PrivateSubnet2
-      PlatformVersion: 1.4.0
+      
       PropagateTags: SERVICE
       SchedulingStrategy: REPLICA
       ServiceRegistries:
@@ -1468,7 +1467,7 @@ Resources:
           Subnets:
           - !Ref PrivateSubnet1
           - !Ref PrivateSubnet2
-      PlatformVersion: 1.4.0
+      
       PropagateTags: SERVICE
       SchedulingStrategy: REPLICA
       ServiceRegistries:
@@ -1692,7 +1691,7 @@ Resources:
           Subnets:
           - !Ref PrivateSubnet1
           - !Ref PrivateSubnet2
-      PlatformVersion: 1.4.0
+      
       PropagateTags: SERVICE
       SchedulingStrategy: REPLICA
       ServiceRegistries:
