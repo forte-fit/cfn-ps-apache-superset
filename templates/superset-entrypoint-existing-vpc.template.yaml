@@ -146,7 +146,6 @@ Resources:
       LaunchType: EC2
       NetworkConfiguration:
         AwsvpcConfiguration:
-          AssignPublicIp: ENABLED
           SecurityGroups:
           - Ref: DefaultNetwork
           Subnets:
@@ -519,7 +518,6 @@ Resources:
       LaunchType: EC2
       NetworkConfiguration:
         AwsvpcConfiguration:
-          AssignPublicIp: ENABLED
           SecurityGroups:
           - Ref: DefaultNetwork
           Subnets:
@@ -696,7 +694,6 @@ Resources:
           Ref: SupersetTCP8088TargetGroup
       NetworkConfiguration:
         AwsvpcConfiguration:
-          AssignPublicIp: ENABLED
           SecurityGroups:
           - Ref: DefaultNetwork
           Subnets:
@@ -992,7 +989,6 @@ Resources:
       LaunchType: EC2
       NetworkConfiguration:
         AwsvpcConfiguration:
-          AssignPublicIp: ENABLED
           SecurityGroups:
           - Ref: DefaultNetwork
           Subnets:
@@ -1239,7 +1235,6 @@ Resources:
       LaunchType: EC2
       NetworkConfiguration:
         AwsvpcConfiguration:
-          AssignPublicIp: ENABLED
           SecurityGroups:
           - Ref: DefaultNetwork
           Subnets:
@@ -1461,7 +1456,6 @@ Resources:
       LaunchType: EC2
       NetworkConfiguration:
         AwsvpcConfiguration:
-          AssignPublicIp: ENABLED
           SecurityGroups:
           - Ref: DefaultNetwork
           Subnets:
@@ -1685,7 +1679,6 @@ Resources:
       LaunchType: EC2
       NetworkConfiguration:
         AwsvpcConfiguration:
-          AssignPublicIp: ENABLED
           SecurityGroups:
           - Ref: DefaultNetwork
           Subnets:
