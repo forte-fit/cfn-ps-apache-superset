@@ -40,7 +40,7 @@ Resources:
       LaunchType: FARGATE
       NetworkConfiguration:
         AwsvpcConfiguration:
-          AssignPublicIp: ENABLED
+          AssignPublicIp: DISABLED
           Subnets: !Ref SubnetIds
 
   LoadBalancer:
