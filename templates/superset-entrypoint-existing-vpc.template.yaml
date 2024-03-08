@@ -143,14 +143,16 @@ Resources:
       DeploymentController:
         Type: ECS
       DesiredCount: 1
-      LaunchType: EC2
+      LaunchType: FARGATE
       NetworkConfiguration:
         AwsvpcConfiguration:
+          AssignPublicIp: ENABLED
           SecurityGroups:
           - Ref: DefaultNetwork
           Subnets:
           - !Ref PrivateSubnet1
           - !Ref PrivateSubnet2
+      PlatformVersion: 1.4.0
       PropagateTags: SERVICE
       SchedulingStrategy: REPLICA
       ServiceRegistries:
@@ -189,7 +191,6 @@ Resources:
         # namespace name created in AWS Cloud Map
         - !Sub ${ClusterName}.local
         Essential: false
-        Interactive: true 
         Image: docker/ecs-searchdomain-sidecar:1.0
         LogConfiguration:
           LogDriver: awslogs
@@ -515,15 +516,16 @@ Resources:
       DeploymentController:
         Type: ECS
       DesiredCount: 1
-      LaunchType: EC2
+      LaunchType: FARGATE
       NetworkConfiguration:
         AwsvpcConfiguration:
+          AssignPublicIp: ENABLED
           SecurityGroups:
           - Ref: DefaultNetwork
           Subnets:
           - !Ref PrivateSubnet1
           - !Ref PrivateSubnet2
-      
+      PlatformVersion: 1.4.0
       PropagateTags: SERVICE
       SchedulingStrategy: REPLICA
       ServiceRegistries:
@@ -560,7 +562,6 @@ Resources:
         - !Sub ${AWS::Region}.compute.internal
         - !Sub ${ClusterName}.local
         Essential: false
-        Interactive: true 
         Image: docker/ecs-searchdomain-sidecar:1.0
         LogConfiguration:
           LogDriver: awslogs
@@ -686,7 +687,7 @@ Resources:
       DeploymentController:
         Type: ECS
       DesiredCount: 1
-      LaunchType: EC2
+      LaunchType: FARGATE
       LoadBalancers:
       - ContainerName: superset
         ContainerPort: 8088
@@ -694,12 +695,13 @@ Resources:
           Ref: SupersetTCP8088TargetGroup
       NetworkConfiguration:
         AwsvpcConfiguration:
+          AssignPublicIp: ENABLED
           SecurityGroups:
           - Ref: DefaultNetwork
           Subnets:
           - !Ref PrivateSubnet1
           - !Ref PrivateSubnet2
-      
+      PlatformVersion: 1.4.0
       PropagateTags: SERVICE
       SchedulingStrategy: REPLICA
       ServiceRegistries:
@@ -759,7 +761,6 @@ Resources:
         - !Sub ${AWS::Region}.compute.internal
         - !Sub ${ClusterName}.local
         Essential: false
-        Interactive: true 
         Image: docker/ecs-searchdomain-sidecar:1.0
         LogConfiguration:
           LogDriver: awslogs
@@ -986,15 +987,16 @@ Resources:
       DeploymentController:
         Type: ECS
       DesiredCount: 1
-      LaunchType: EC2
+      LaunchType: FARGATE
       NetworkConfiguration:
         AwsvpcConfiguration:
+          AssignPublicIp: ENABLED
           SecurityGroups:
           - Ref: DefaultNetwork
           Subnets:
           - !Ref PrivateSubnet1
           - !Ref PrivateSubnet2
-      
+      PlatformVersion: 1.4.0
       PropagateTags: SERVICE
       SchedulingStrategy: REPLICA
       ServiceRegistries:
@@ -1031,7 +1033,6 @@ Resources:
         - !Sub ${AWS::Region}.compute.internal
         - !Sub ${ClusterName}.local
         Essential: false
-        Interactive: true 
         Image: docker/ecs-searchdomain-sidecar:1.0
         LogConfiguration:
           LogDriver: awslogs
@@ -1232,15 +1233,16 @@ Resources:
       DeploymentController:
         Type: ECS
       DesiredCount: 1
-      LaunchType: EC2
+      LaunchType: FARGATE
       NetworkConfiguration:
         AwsvpcConfiguration:
+          AssignPublicIp: ENABLED
           SecurityGroups:
           - Ref: DefaultNetwork
           Subnets:
           - !Ref PrivateSubnet1
           - !Ref PrivateSubnet2
-      
+      PlatformVersion: 1.4.0
       PropagateTags: SERVICE
       SchedulingStrategy: REPLICA
       ServiceRegistries:
@@ -1277,7 +1279,6 @@ Resources:
         - !Sub ${AWS::Region}.compute.internal
         - !Sub ${ClusterName}.local
         Essential: false
-        Interactive: true 
         Image: docker/ecs-searchdomain-sidecar:1.0
         LogConfiguration:
           LogDriver: awslogs
@@ -1453,15 +1454,16 @@ Resources:
       DeploymentController:
         Type: ECS
       DesiredCount: 1
-      LaunchType: EC2
+      LaunchType: FARGATE
       NetworkConfiguration:
         AwsvpcConfiguration:
+          AssignPublicIp: ENABLED
           SecurityGroups:
           - Ref: DefaultNetwork
           Subnets:
           - !Ref PrivateSubnet1
           - !Ref PrivateSubnet2
-      
+      PlatformVersion: 1.4.0
       PropagateTags: SERVICE
       SchedulingStrategy: REPLICA
       ServiceRegistries:
@@ -1498,7 +1500,6 @@ Resources:
         - !Sub ${AWS::Region}.compute.internal
         - !Sub ${ClusterName}.local
         Essential: false
-        Interactive: true 
         Image: docker/ecs-searchdomain-sidecar:1.0
         LogConfiguration:
           LogDriver: awslogs
@@ -1676,15 +1677,16 @@ Resources:
       DeploymentController:
         Type: ECS
       DesiredCount: 1
-      LaunchType: EC2
+      LaunchType: FARGATE
       NetworkConfiguration:
         AwsvpcConfiguration:
+          AssignPublicIp: ENABLED
           SecurityGroups:
           - Ref: DefaultNetwork
           Subnets:
           - !Ref PrivateSubnet1
           - !Ref PrivateSubnet2
-      
+      PlatformVersion: 1.4.0
       PropagateTags: SERVICE
       SchedulingStrategy: REPLICA
       ServiceRegistries:
@@ -1721,7 +1723,6 @@ Resources:
         - !Sub ${AWS::Region}.compute.internal
         - !Sub ${ClusterName}.local
         Essential: false
-        Interactive: true 
         Image: docker/ecs-searchdomain-sidecar:1.0
         LogConfiguration:
           LogDriver: awslogs
