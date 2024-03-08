@@ -687,7 +687,7 @@ Resources:
       DeploymentController:
         Type: ECS
       DesiredCount: 1
-      LaunchType: FARGATE
+      LaunchType: EC2
       LoadBalancers:
       - ContainerName: superset
         ContainerPort: 8088
@@ -701,7 +701,6 @@ Resources:
           Subnets:
           - !Ref PrivateSubnet1
           - !Ref PrivateSubnet2
-      PlatformVersion: 1.4.0
       PropagateTags: SERVICE
       SchedulingStrategy: REPLICA
       ServiceRegistries:
@@ -855,9 +854,7 @@ Resources:
       ExecutionRoleArn: !GetAtt SupersetTaskExecutionRole.Arn
       Family: !Sub ${ClusterName}-superset
       Memory: "16384"
-      NetworkMode: awsvpc
-      RequiresCompatibilities:
-      - FARGATE
+      NetworkMode: bridge
       TaskRoleArn:
         Ref: SupersetTaskRole
       Volumes:
